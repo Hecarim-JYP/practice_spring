@@ -1,4 +1,5 @@
 package hello.servlet.basic.request;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hello.servlet.basic.HelloData;
 import org.springframework.util.StreamUtils;
@@ -10,6 +11,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+
 /**
  * http://localhost:8080/request-body-json
  *

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title</title>
+    <title>Title</title>
 </head>
 <body>
-<form action="save" method="post">
-이름: <input type="text" name="username" />
-나이: <input type="text" name="age" />
-<button type="submit">전송</button>
-</form>
+    <form action="save" method="post">
+        이름: <input type="text" name="username" />
+        나이: <input type="text" name="age" />
+        <button type="submit">전송</button>
+    </form>
 </body>
 </html>
