@@ -15,5 +15,6 @@ public class ModelView {
 
     public ModelView(String viewName) {
         this.viewName = viewName;
+        // FrontController에서 호출된 getMyView(String viewName)함수를 통해 viewName을 넘겨받는다.
     }
 }

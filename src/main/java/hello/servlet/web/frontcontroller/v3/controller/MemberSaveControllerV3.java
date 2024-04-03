@@ -4,7 +4,6 @@ import hello.servlet.domain.member.Member;
 import hello.servlet.domain.member.MemberRepository;
 import hello.servlet.web.frontcontroller.ModelView;
 import hello.servlet.web.frontcontroller.v3.ControllerV3;
-import org.springframework.ui.Model;
 
 import java.util.Map;
 
@@ -23,7 +22,10 @@ public class MemberSaveControllerV3 implements ControllerV3 {
 
         ModelView modelView = new ModelView("save-result");
         modelView.getModel().put("member", member);
-
+        /*
+            Map 객체 model 에 위처럼 memeber를 put 하는 이유는 jsp 페이지에서 조회할 때 쓰려고 만들어놓는거다.
+            Ex) ${member.id}
+        */
         return modelView;
     }
 }

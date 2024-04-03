@@ -19,7 +19,17 @@ public class MemberListControllerV3 implements ControllerV3 {
 
         ModelView modelView = new ModelView("members");
         modelView.getModel().put("members", members);
-
+        /*
+            Map 객체 model 에 위처럼 members를 put 하는 이유는 jsp 페이지에서 조회할 때 쓰려고 만들어놓는거다.
+            Ex)
+                <c:forEach var="item" items="${members}">
+                <tr>
+                    <td>${item.id}</td>
+                    <td>${item.username}</td>
+                    <td>${item.age}</td>
+                </tr>
+                </c:forEach>
+        */
         return modelView;
     }
 }
